@@ -12,6 +12,30 @@ Using what you know about data types, variables, operators, conditional blocks, 
 
 > **Hint:** You may need `parseInt()` and `toString()`
 
+## How to Get User Input
+
+At any point in our JS code, if we write prompt(), a pop up box will open in our browser for a user to enter in text.
+
+```js
+// prompts user and stores value in the variable
+var valueOfPrompt = prompt()
+// logs value stored
+console.log(valueOfPrompt)
+```
+
+You can also pass in a string as an argument to have the pop up box contain that string as a ... prompt.
+
+```js
+var age = prompt("How old are you?")
+// ES6 String Interpolation
+alert(`You are ${age} years old.`)
+// ES5 Version
+alert("You are " + age + " years old.")
+```
+
+Whatever we type into the textbox in the window that prompt() brings up, is returned by prompt to the variable age.
+
+
 ### Need Some Inspiration?
 
 How about...
