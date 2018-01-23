@@ -6,7 +6,7 @@ Using what you know about data types, variables, operators, conditional blocks, 
 * Any path the user goes down must ask them at least **three** questions.
 * There must be a minimum of **seven** total destinations the user could arrive at based on their responses.
 * For **at least one** of the questions asked, there must be **more than two possible user responses**.
-* Your code must contain **at least one loop**.
+* Your adventure must offer the user an option to replay at the end.
 * Your code must contain **at least one switch statement**
 * Your code must make use of **both string and number user inputs**.
 
@@ -14,7 +14,9 @@ Using what you know about data types, variables, operators, conditional blocks, 
 
 ## How to Get User Input
 
-At any point in our JS code, if we write prompt(), a pop up box will open in our browser for a user to enter in text.
+### `prompt()`
+
+At any point in our JS code, if we write `prompt()`, a pop up box will open in our browser for a user to enter in text. The `prompt()` function returns the string entered into the pop up.
 
 ```js
 // prompts user and stores value in the variable
@@ -23,7 +25,7 @@ var valueOfPrompt = prompt()
 console.log(valueOfPrompt)
 ```
 
-You can also pass in a string as an argument to have the pop up box contain that string as a ... prompt.
+Prompt takes a string as an argument. That string is displayed in the pop up.
 
 ```js
 var age = prompt("How old are you?")
@@ -34,6 +36,10 @@ alert("You are " + age + " years old.")
 ```
 
 Whatever we type into the textbox in the window that prompt() brings up, is returned by prompt to the variable age.
+
+### `confirm()`
+
+Like `prompt()`, confirm opens a pop-up but instead of a text input field, the pop up has two buttons, **ok** and **cancel**. If the user selects **ok**, `confirm()` returns `true` (and otherwise returns `false`). Also like prompt, `confirm()` also takes a string that will be displayed to the user in the pop up.
 
 
 ### Need Some Inspiration?
